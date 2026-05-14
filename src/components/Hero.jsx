@@ -75,7 +75,7 @@ export default function Hero() {
             {/* Nome principal */}
             <h1 className="font-display font-extrabold leading-[1.05] mb-6">
               <span className="block text-5xl md:text-6xl lg:text-7xl text-[#EDF2FF]">
-                Carlos André
+                André
               </span>
               <span className="block text-5xl md:text-6xl lg:text-7xl gradient-text mt-1">
                 Oliveira

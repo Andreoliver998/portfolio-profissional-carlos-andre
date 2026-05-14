@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   VARIÁVEIS GLOBAIS
+   ============================================ */
+:root {
+  --bg-primary:   #060A12;
+  --bg-surface:   #0B1220;
+  --bg-card:      #0F1929;
+  --border:       #1B2C45;
+  --blue:         #0070F3;
+  --cyan:         #00C8FF;
+  --gold:         #F5A623;
+  --text:         #EDF2FF;
+  --muted:        #7B9CC7;
+  --dim:          #3D5878;
+}
+
+/* ============================================
+   BASE
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ============================================
+   SCROLLBAR PERSONALIZADA
+   ============================================ */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+/* ============================================
+   UTILITÁRIOS DE GRADIENTE
+   ============================================ */
+.gradient-text {
+  background: linear-gradient(135deg, #0070F3 0%, #00C8FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-gold {
+  background: linear-gradient(135deg, #F5A623 0%, #FFD97D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   FUNDO GRID (DOT / LINE)
+   ============================================ */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 112, 243, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 112, 243, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.dot-bg {
+  background-image: radial-gradient(rgba(0, 112, 243, 0.15) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ============================================
+   ANIMAÇÕES DE SCROLL (REVEAL)
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+.reveal-delay-5 { transition-delay: 0.40s; }
+.reveal-delay-6 { transition-delay: 0.48s; }
+
+/* ============================================
+   GRADIENT BORDER
+   ============================================ */
+.gradient-border {
+  background:
+    linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+    linear-gradient(135deg, rgba(0,112,243,0.5), rgba(0,200,255,0.2)) border-box;
+  border: 1px solid transparent;
+}
+
+.gradient-border:hover {
+  background:
+    linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+    linear-gradient(135deg, rgba(0,112,243,0.9), rgba(0,200,255,0.5)) border-box;
+  border: 1px solid transparent;
+}
+
+/* ============================================
+   KEYFRAMES GLOBAIS
+   ============================================ */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-14px); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 0.65; }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ============================================
+   EFEITO GLOW
+   ============================================ */
+.glow-blue {
+  box-shadow: 0 0 40px rgba(0, 112, 243, 0.35);
+}
+
+.glow-blue-sm {
+  box-shadow: 0 0 20px rgba(0, 112, 243, 0.25);
+}
+
+/* ============================================
+   CARD HOVER
+   ============================================ */
+.card-hover {
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}

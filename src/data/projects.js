@@ -27,7 +27,7 @@ export const projects = [
     links: {
       github: 'https://github.com/Andreoliver998/finsync-finance-platform',
       demo: 'https://finsync.paytech.app.br/cards',
-      demoLabel: 'Demo ↗',
+      demoLabel: 'Ver sistema ↗',
     },
   },
   {
@@ -57,7 +57,7 @@ export const projects = [
     links: {
       github: 'https://github.com/Andreoliver998/pdv_backend',
       demo: 'https://paytech.app.br/',
-      demoLabel: 'Demo ↗',
+      demoLabel: 'Ver sistema ↗',
     },
   },
   {

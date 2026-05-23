@@ -7,9 +7,9 @@ const contactLinks = [
   {
     icon: '✉',
     label: 'E-mail',
-    value: 'admin@paytech.app.br',
+    value: 'andre@paytech.app.br',
     detail: 'Respondido em até 24h',
-    href: 'mailto:admin@paytech.app.br',
+    href: 'mailto:andre@paytech.app.br',
   },
   {
     icon: 'in',

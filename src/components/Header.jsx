@@ -41,7 +41,7 @@ export default function Header() {
         {/* ── Logo ─────────────────────────────────────── */}
         <a href="#home" className="flex items-center gap-0.5 group">
           <span className="font-display font-extrabold text-lg text-[#EDF2FF] tracking-tight">
-            Carlos André
+            André Oliveira
           </span>
           <span className="font-display font-extrabold text-lg text-[#9DFF2C]">.</span>
           <span className="font-body text-sm text-[#7B9CC7] ml-1 font-normal group-hover:text-[#EDF2FF] transition-colors">

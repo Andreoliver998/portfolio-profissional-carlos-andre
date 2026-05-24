@@ -48,7 +48,7 @@ export default function About() {
             </span>
           </div>
           <h2 className="font-display font-bold text-4xl md:text-5xl text-[#EDF2FF]">
-            Quem é Carlos André?
+            Quem é André Oliveira?
           </h2>
         </div>
 
@@ -59,7 +59,7 @@ export default function About() {
             <p className="reveal reveal-delay-1 text-[17px] text-[#7B9CC7] leading-relaxed font-body">
               Sou{' '}
               <span className="text-[#EDF2FF] font-medium">
-                Carlos André Almeida de Oliveira
+                André Oliveira
               </span>
               , desenvolvedor Full Stack, estudante de Engenharia de Software e com base acadêmica
               em Matemática. Tenho foco na construção de soluções digitais modernas, escaláveis e

@@ -111,7 +111,7 @@ export default function Differentials() {
             <div className="w-8 h-px bg-[#0070F3]" />
           </div>
           <h2 className="font-display font-bold text-4xl md:text-5xl text-[#EDF2FF] mb-4">
-            Por que Carlos André?
+            Por que André Oliveira?
           </h2>
           <p className="text-[#7B9CC7] max-w-2xl mx-auto font-body text-base">
             Conjunto de habilidades técnicas e comportamentais que me diferenciam como

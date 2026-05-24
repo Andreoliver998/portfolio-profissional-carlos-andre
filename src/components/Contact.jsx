@@ -76,7 +76,7 @@ export default function Contact() {
     }
 
     const messageText =
-`Olá, Carlos André! Vim pelo seu portfólio.
+`Olá, André Oliveira! Vim pelo seu portfólio.
 
 Nome: ${form.name}
 E-mail: ${form.email}

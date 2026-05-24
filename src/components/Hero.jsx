@@ -84,10 +84,10 @@ export default function Hero() {
             {/* Nome principal */}
             <h1 className="font-display font-extrabold leading-[1.05] mb-6">
               <span className="block text-5xl md:text-6xl lg:text-7xl text-[#EDF2FF]">
-                Carlos André
+                André
               </span>
               <span className="block text-3xl md:text-4xl lg:text-5xl gradient-text mt-2">
-                Almeida de Oliveira
+                Oliveira
               </span>
             </h1>
 
@@ -189,7 +189,7 @@ function HeroCard() {
               CA
             </div>
             <div>
-              <div className="text-sm font-semibold text-[#EDF2FF] font-display">Carlos André</div>
+              <div className="text-sm font-semibold text-[#EDF2FF] font-display">André Oliveira</div>
               <div className="text-xs text-[#7B9CC7] font-body">Full Stack Developer</div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { socialLinks } from '../data/socialLinks.js'
 import heroTechBg from '../assets/hero/hero-tech-bg.png'
+import andreProfileImage from '../assets/hero/andre-profile.png'
 import copilotIcon from '../assets/social/github-copilot.svg'
 import pythonIcon from '../assets/social/python.svg'
 import reactIcon from '../assets/social/react.svg'
@@ -185,8 +186,12 @@ function HeroCard() {
 
           {/* Avatar + nome */}
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#0070F3] to-[#00C8FF] flex items-center justify-center font-display font-bold text-white text-sm shadow-[0_0_16px_rgba(0,112,243,0.5)]">
-              AO
+            <div className="w-11 h-11 rounded-xl overflow-hidden border border-[#0070F3]/30 shadow-[0_0_16px_rgba(0,112,243,0.35)] shrink-0">
+              <img
+                src={andreProfileImage}
+                alt="André Oliveira"
+                className="w-full h-full object-cover object-top scale-[1.08]"
+              />
             </div>
             <div>
               <div className="text-sm font-semibold text-[#EDF2FF] font-display">André Oliveira</div>

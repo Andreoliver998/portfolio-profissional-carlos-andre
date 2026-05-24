@@ -23,8 +23,8 @@ export const skillCategories = [
     tagClass: 'bg-cyan-500/10 border-cyan-500/25 text-cyan-300',
     skills: [
       'Node.js', 'Express', 'REST APIs',
-      'JWT Auth', 'Prisma ORM', 'Middlewares',
-      'Segurança de APIs', 'Autenticação',
+      'JWT Auth', 'Prisma ORM', 'Autenticação',
+      'Validações', 'Arquitetura MVC', 'Segurança de APIs',
     ],
   },
   {
@@ -36,9 +36,9 @@ export const skillCategories = [
     borderClass: 'border-purple-500/25',
     tagClass: 'bg-purple-500/10 border-purple-500/25 text-purple-300',
     skills: [
-      'MongoDB Atlas', 'Modelagem de dados',
+      'PostgreSQL', 'MongoDB Atlas', 'SQLite',
+      'Prisma ORM', 'Modelagem de dados',
       'Consultas avançadas', 'Índices e performance',
-      'Integração com ORM',
     ],
   },
   {
@@ -56,6 +56,19 @@ export const skillCategories = [
     ],
   },
   {
+    id: 'mobile',
+    title: 'Mobile',
+    icon: '📱',
+    accentClass: 'text-sky-400',
+    bgClass: 'bg-sky-500/10',
+    borderClass: 'border-sky-500/25',
+    tagClass: 'bg-sky-500/10 border-sky-500/25 text-sky-300',
+    skills: [
+      'Android Studio', 'Java', 'Kotlin',
+      'React Native', 'Integração com APIs',
+    ],
+  },
+  {
     id: 'devops',
     title: 'Deploy & Infraestrutura',
     icon: '🚀',
@@ -64,9 +77,9 @@ export const skillCategories = [
     borderClass: 'border-emerald-500/25',
     tagClass: 'bg-emerald-500/10 border-emerald-500/25 text-emerald-300',
     skills: [
-      'VPS / Linux', 'NGINX', 'PM2',
-      'HTTPS / SSL', 'Domínios & DNS',
-      'Variáveis de ambiente', 'Hostinger',
+      'Git', 'GitHub', 'VPS / Linux',
+      'NGINX', 'PM2', 'HTTPS / SSL',
+      'Domínios & DNS', 'Ambiente de Produção',
     ],
   },
   {

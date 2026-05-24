@@ -32,7 +32,7 @@ const contactLinks = [
   {
     icon: whatsappIcon,
     label: 'WhatsApp',
-    value: '+55 (98) 9 XXXX-XXXX',
+    value: '+55 (98) 9 8534-3385',
     detail: 'Contato direto e rápido',
     href: `https://wa.me/${WHATSAPP_NUMBER}`,
   },
@@ -76,7 +76,7 @@ export default function Contact() {
     }
 
     const messageText =
-`Olá, André! Vim pelo seu portfólio profissional.
+`Olá, Carlos André! Vim pelo seu portfólio.
 
 Nome: ${form.name}
 E-mail: ${form.email}
@@ -85,7 +85,7 @@ Assunto: ${form.subject}
 Mensagem:
 ${form.message}
 
-Origem: Portfólio profissional — andre.paytech.app.br`
+Origem: Portfólio profissional`
 
     const encoded     = encodeURIComponent(messageText)
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`
@@ -100,7 +100,7 @@ Origem: Portfólio profissional — andre.paytech.app.br`
   }
 
   return (
-    <section id="contato" ref={sectionRef} className="py-28 bg-[#0B1220] relative overflow-hidden">
+    <section id="contato" ref={sectionRef} className="py-20 bg-[#0B1220] relative overflow-hidden">
 
       {/* ── Glow de fundo ─────────────────────────────────────────────── */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#9DFF2C]/[0.03] to-transparent pointer-events-none" />

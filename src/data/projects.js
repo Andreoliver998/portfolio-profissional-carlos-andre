@@ -4,7 +4,7 @@ export const projects = [
     title: 'FinSync',
     subtitle: 'Plataforma de Inteligência Financeira',
     description:
-      'Plataforma de gestão financeira pessoal com React, Node.js, Prisma, MongoDB e recursos voltados para Open Finance, dashboards e análise inteligente de dados financeiros.',
+      'Plataforma financeira com foco em organização, análise de dados e visualização de informações em ambiente web moderno. Integração com banco de dados, autenticação segura e arquitetura preparada para Open Finance.',
     technologies: [
       'React', 'Vite', 'Node.js', 'Express',
       'Prisma', 'MongoDB', 'JWT', 'Open Finance',
@@ -35,21 +35,21 @@ export const projects = [
     title: 'PayTech PDV',
     subtitle: 'Sistema de Ponto de Venda',
     description:
-      'Sistema PDV da PayTech com backend, painel web e estrutura para controle de vendas, operações comerciais e evolução para integrações de pagamento.',
+      'Sistema de PDV completo para gestão de vendas, produtos, operadores, terminais e controle operacional. Solução com backend, painel web e estrutura preparada para integrações de pagamento.',
     technologies: [
       'Node.js', 'Express', 'MongoDB',
-      'API REST', 'Backend', 'Painel Web',
+      'React', 'API REST', 'Painel Web',
       'Deploy', 'VPS', 'NGINX',
     ],
     features: [
-      'Estrutura de backend para ponto de venda',
+      'Gestão de vendas, produtos e operadores',
       'Painel web para controle operacional',
-      'Fluxo de vendas e gestão de operações',
-      'Base para controle de clientes e usuários',
-      'Arquitetura preparada para evolução e integrações',
+      'Fluxo de vendas e relatórios',
+      'Controle de clientes e terminais',
+      'Arquitetura preparada para integrações de pagamento',
       'Deploy em produção na infraestrutura PayTech',
     ],
-    status: 'Em desenvolvimento',
+    status: 'Beta privado',
     statusColor: 'yellow',
     category: 'PDV / Sistema Comercial',
     highlight: true,
@@ -65,7 +65,7 @@ export const projects = [
     title: 'Instituto Elo Libras',
     subtitle: 'Sistema de Inscrição e Gerenciamento de Alunos',
     description:
-      'Sistema de inscrição online e gerenciamento de alunos com FastAPI, Jinja2, SQLAlchemy, painel administrativo, checkout via Mercado Pago e exportação de dados.',
+      'Site institucional e sistema de inscrição desenvolvido para fortalecer a presença digital e a comunicação profissional de uma instituição voltada à Libras e inclusão — com painel administrativo, pagamentos e exportação de dados.',
     technologies: [
       'Python', 'FastAPI', 'Jinja2',
       'SQLAlchemy', 'SQLite', 'PostgreSQL',

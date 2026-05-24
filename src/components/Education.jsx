@@ -78,7 +78,7 @@ export default function Education() {
   useReveal(sectionRef)
 
   return (
-    <section id="formacao" ref={sectionRef} className="py-28 bg-[#0B1220]">
+    <section id="formacao" ref={sectionRef} className="py-20 bg-[#0B1220]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* ── Cabeçalho ─────────────────────────────── */}

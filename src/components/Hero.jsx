@@ -9,7 +9,7 @@ import reactIcon from '../assets/social/react.svg'
 const stats = [
   { value: '4+',   label: 'Projetos em produção' },
   { value: '15+',  label: 'Tecnologias dominadas' },
-  { value: '100%', label: 'Comprometimento' },
+  { value: '3+',   label: 'Sistemas com deploy real' },
 ]
 
 // Tags de papel que flutuam no card visual
@@ -20,13 +20,11 @@ const floatingBadges = [
   { text: '📊 Dashboards',        color: 'text-[#F5A623]', border: 'border-[#F5A623]/30', delay: '1.8s',  bottom: '8%', left: '8%'  },
 ]
 
-// Barras de habilidade dentro do card
-const skillBars = [
-  { label: 'Frontend', pct: 88 },
-  { label: 'Backend',  pct: 85 },
-  { label: 'Python / Data', pct: 80 },
-  { label: 'IA & APIs', pct: 75 },
-]
+// Tecnologias exibidas no card visual do Hero
+const cardStack = {
+  primary: ['React', 'Node.js', 'Python', 'PostgreSQL'],
+  secondary: ['APIs REST', 'VPS / Deploy', 'IA'],
+}
 
 export default function Hero() {
   const heroRef = useRef(null)
@@ -86,16 +84,16 @@ export default function Hero() {
             {/* Nome principal */}
             <h1 className="font-display font-extrabold leading-[1.05] mb-6">
               <span className="block text-5xl md:text-6xl lg:text-7xl text-[#EDF2FF]">
-                André
+                Carlos André
               </span>
-              <span className="block text-5xl md:text-6xl lg:text-7xl gradient-text mt-1">
-                Oliveira
+              <span className="block text-3xl md:text-4xl lg:text-5xl gradient-text mt-2">
+                Almeida de Oliveira
               </span>
             </h1>
 
             {/* Tags de papel profissional */}
             <div className="flex flex-wrap gap-2 mb-7">
-              {['Matemático', 'Full-Stack Dev', 'Python', 'Dados & IA'].map(tag => (
+              {['Full Stack Dev', 'Eng. de Software', 'Matemático', 'Dados & IA'].map(tag => (
                 <span
                   key={tag}
                   className="px-3 py-1 text-sm bg-white/5 border border-white/10 rounded-full text-[#7B9CC7] font-body"
@@ -107,12 +105,11 @@ export default function Hero() {
 
             {/* Descrição */}
             <p className="text-lg text-[#7B9CC7] leading-relaxed max-w-[520px] mb-10 font-body">
-              Desenvolvo soluções digitais, sistemas web, plataformas financeiras, dashboards e
-              automações com foco em{' '}
-              <span className="text-[#EDF2FF] font-medium">
-                eficiência, organização e impacto real
-              </span>{' '}
-              para empresas e profissionais.
+              Desenvolvedor Full Stack, estudante de{' '}
+              <span className="text-[#EDF2FF] font-medium">Engenharia de Software</span>{' '}
+              com base em Matemática — criando sistemas web, APIs, aplicações mobile, dashboards e
+              automações completas, do frontend ao{' '}
+              <span className="text-[#EDF2FF] font-medium">deploy em produção</span>.
             </p>
 
             {/* Botões de ação */}
@@ -193,26 +190,31 @@ function HeroCard() {
             </div>
             <div>
               <div className="text-sm font-semibold text-[#EDF2FF] font-display">Carlos André</div>
-              <div className="text-xs text-[#7B9CC7] font-body">Full-Stack Developer</div>
+              <div className="text-xs text-[#7B9CC7] font-body">Full Stack Developer</div>
             </div>
           </div>
 
-          {/* Barras de habilidade */}
-          <div className="space-y-3">
-            {skillBars.map(skill => (
-              <div key={skill.label}>
-                <div className="flex justify-between text-xs mb-1.5">
-                  <span className="text-[#7B9CC7] font-body">{skill.label}</span>
-                  <span className="text-[#0070F3] font-medium font-body">{skill.pct}%</span>
-                </div>
-                <div className="h-1.5 bg-white/5 rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-gradient-to-r from-[#0070F3] to-[#00C8FF] rounded-full"
-                    style={{ width: `${skill.pct}%` }}
-                  />
-                </div>
-              </div>
-            ))}
+          {/* Stack técnica em badges */}
+          <div className="space-y-2.5">
+            <p className="text-[10px] text-[#3D5878] uppercase tracking-widest font-body">Stack principal</p>
+            <div className="flex flex-wrap gap-1.5">
+              {cardStack.primary.map(t => (
+                <span key={t} className="px-2 py-0.5 text-[10px] bg-[#0070F3]/15 border border-[#0070F3]/25 text-[#00C8FF] rounded-md font-body font-medium">
+                  {t}
+                </span>
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {cardStack.secondary.map(t => (
+                <span key={t} className="px-2 py-0.5 text-[10px] bg-white/5 border border-white/10 text-[#7B9CC7] rounded-md font-body">
+                  {t}
+                </span>
+              ))}
+            </div>
+            <div className="mt-1 pt-2.5 border-t border-[#1B2C45]/50 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-green-400 shrink-0" style={{ animation: 'glowPulse 2s ease-in-out infinite' }} />
+              <span className="text-[10px] text-[#7B9CC7] font-body">Disponível para projetos</span>
+            </div>
           </div>
         </div>
       </div>

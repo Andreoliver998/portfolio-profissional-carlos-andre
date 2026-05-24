@@ -26,7 +26,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   const whatsappCta = `${SOCIAL.whatsapp}?text=${encodeURIComponent(
-    'Olá, André! Vim pelo seu portfólio e gostaria de conversar.',
+    'Olá, Carlos André! Vim pelo seu portfólio e gostaria de conversar.',
   )}`
 
   return (
@@ -39,12 +39,12 @@ export default function Footer() {
           {/* ── Marca ─────────────────────────────────── */}
           <div>
             <div className="flex items-baseline gap-0.5 mb-3">
-              <span className="font-display font-extrabold text-xl text-[#EDF2FF]">André</span>
-              <span className="font-display font-extrabold text-xl text-[#9DFF2C]">.</span>
+              <span className="font-display font-extrabold text-lg text-[#EDF2FF]">Carlos André</span>
+              <span className="font-display font-extrabold text-lg text-[#9DFF2C]">.</span>
               <span className="font-body text-sm text-[#7B9CC7] ml-1">dev</span>
             </div>
             <p className="text-sm text-[#3D5878] font-body leading-relaxed max-w-[220px]">
-              Matemático · Desenvolvedor Full-Stack · Python &amp; Inteligência Artificial
+              Desenvolvedor Full Stack · Eng. de Software · Dados &amp; IA
             </p>
 
             {/* Status de disponibilidade */}

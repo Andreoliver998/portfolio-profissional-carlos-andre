@@ -28,7 +28,7 @@ export default function Projects() {
   useReveal(sectionRef)
 
   return (
-    <section id="projetos" ref={sectionRef} className="py-28 bg-[#0B1220] relative overflow-hidden">
+    <section id="projetos" ref={sectionRef} className="py-20 bg-[#0B1220] relative overflow-hidden">
 
       {/* ── Glow de fundo sutil ──────────────────────────────────────── */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#9DFF2C]/[0.025] blur-3xl rounded-full pointer-events-none" />

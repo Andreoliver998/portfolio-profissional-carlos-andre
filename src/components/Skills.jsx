@@ -20,7 +20,7 @@ export default function Skills() {
   useReveal(sectionRef)
 
   return (
-    <section id="habilidades" ref={sectionRef} className="py-28 relative">
+    <section id="habilidades" ref={sectionRef} className="py-20 relative">
 
       {/* Decoração de fundo sutil */}
       <div className="absolute inset-0 dot-bg pointer-events-none opacity-40" />

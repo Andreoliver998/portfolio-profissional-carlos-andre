@@ -94,7 +94,7 @@ export default function Differentials() {
   useReveal(sectionRef)
 
   return (
-    <section id="diferenciais" ref={sectionRef} className="py-28 relative">
+    <section id="diferenciais" ref={sectionRef} className="py-20 relative">
 
       {/* Gradiente de fundo */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0070F3]/[0.03] to-transparent pointer-events-none" />

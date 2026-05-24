@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react'
 
 const highlights = [
-  { icon: '⚡', value: '4+',    label: 'Sistemas em produção'  },
-  { icon: '🛠️', value: '15+',   label: 'Tecnologias dominadas' },
+  { icon: '⚡', value: '4+',     label: 'Sistemas em produção'  },
+  { icon: '🛠️', value: '15+',    label: 'Tecnologias dominadas' },
   { icon: '📐', value: 'Sólida', label: 'Base matemática'       },
-  { icon: '🎯', value: '100%',  label: 'Foco em resultados'    },
+  { icon: '🚀', value: 'Deploy', label: 'VPS e produção real'   },
 ]
 
 const areasTags = [
@@ -36,7 +36,7 @@ export default function About() {
   useReveal(sectionRef)
 
   return (
-    <section id="sobre" ref={sectionRef} className="py-28 relative">
+    <section id="sobre" ref={sectionRef} className="py-20 relative">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* ── Cabeçalho da seção ────────────────────── */}
@@ -59,23 +59,19 @@ export default function About() {
             <p className="reveal reveal-delay-1 text-[17px] text-[#7B9CC7] leading-relaxed font-body">
               Sou{' '}
               <span className="text-[#EDF2FF] font-medium">
-                Matemático e Desenvolvedor Full-Stack
+                Carlos André Almeida de Oliveira
               </span>
-              , com formação em Engenharia de Software e especialização em Inteligência Artificial.
-              Tenho experiência prática no desenvolvimento de sistemas web, plataformas
-              financeiras, dashboards e automações voltadas para organização, análise de dados e
-              tomada de decisão estratégica.
+              , desenvolvedor Full Stack, estudante de Engenharia de Software e com base acadêmica
+              em Matemática. Tenho foco na construção de soluções digitais modernas, escaláveis e
+              úteis para empresas, com experiência em sistemas web, APIs, banco de dados,
+              automações e análise de dados.
             </p>
 
             <p className="reveal reveal-delay-2 text-[17px] text-[#7B9CC7] leading-relaxed font-body">
-              Minha trajetória une{' '}
-              <span className="text-[#EDF2FF] font-medium">raciocínio matemático rigoroso</span>{' '}
-              com visão prática de problemas reais e desenvolvimento de software profissional.
-              Busco criar soluções úteis, bem estruturadas e preparadas para crescer — sempre
-              com foco em{' '}
-              <span className="text-[#EDF2FF] font-medium">
-                clareza, desempenho, segurança e experiência do usuário.
-              </span>
+              Minha atuação combina{' '}
+              <span className="text-[#EDF2FF] font-medium">raciocínio lógico, visão técnica</span>{' '}
+              e atenção à experiência do usuário — buscando desenvolver produtos que sejam
+              funcionais, seguros, bem estruturados e preparados para uso real em produção.
             </p>
 
             <p className="reveal reveal-delay-3 text-[17px] text-[#7B9CC7] leading-relaxed font-body">

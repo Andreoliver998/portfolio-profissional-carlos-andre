@@ -44,7 +44,7 @@ export default function Footer() {
               <span className="font-body text-sm text-[#7B9CC7] ml-1">dev</span>
             </div>
             <p className="text-sm text-[#3D5878] font-body leading-relaxed max-w-[220px]">
-              Desenvolvedor Full Stack · Eng. de Software · Dados &amp; IA
+              Desenvolvedor Full Stack · Engenharia de Software · Dados &amp; IA
             </p>
 
             {/* Status de disponibilidade */}

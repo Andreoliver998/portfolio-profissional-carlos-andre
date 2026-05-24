@@ -93,7 +93,7 @@ export default function Hero() {
 
             {/* Tags de papel profissional */}
             <div className="flex flex-wrap gap-2 mb-7">
-              {['Full Stack Dev', 'Eng. de Software', 'Matemático', 'Dados & IA'].map(tag => (
+              {['Desenvolvedor Full Stack', 'Engenharia de Software', 'Matemático', 'Dados & IA'].map(tag => (
                 <span
                   key={tag}
                   className="px-3 py-1 text-sm bg-white/5 border border-white/10 rounded-full text-[#7B9CC7] font-body"
@@ -186,11 +186,11 @@ function HeroCard() {
           {/* Avatar + nome */}
           <div className="flex items-center gap-3 mb-5">
             <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#0070F3] to-[#00C8FF] flex items-center justify-center font-display font-bold text-white text-sm shadow-[0_0_16px_rgba(0,112,243,0.5)]">
-              CA
+              AO
             </div>
             <div>
               <div className="text-sm font-semibold text-[#EDF2FF] font-display">André Oliveira</div>
-              <div className="text-xs text-[#7B9CC7] font-body">Full Stack Developer</div>
+              <div className="text-xs text-[#7B9CC7] font-body">Desenvolvedor Full Stack</div>
             </div>
           </div>
 

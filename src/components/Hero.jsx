@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { socialLinks } from '../data/socialLinks.js'
 import copilotIcon from '../assets/social/github-copilot.svg'
 import pythonIcon from '../assets/social/python.svg'
-import reactIcon from '../assets/social/react.png'
+import reactIcon from '../assets/social/react.svg'
 
 // Estatísticas de destaque no Hero
 const stats = [

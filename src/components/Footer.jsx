@@ -1,13 +1,16 @@
 // ── Fonte única de links sociais ─────────────────────────────────────────────
 // Para alterar qualquer link, edite apenas: src/data/socialLinks.js
 import { socialLinks as SOCIAL } from '../data/socialLinks.js'
+import githubIcon from '../assets/social/github.svg'
+import linkedinIcon from '../assets/social/linkedin.svg'
+import whatsappIcon from '../assets/social/whatsapp.png'
 
 // Array para o .map() do footer — alimentado pela fonte centralizada
 const socialLinksArr = [
-  { label: 'GitHub',    href: SOCIAL.github    },
-  { label: 'LinkedIn',  href: SOCIAL.linkedin  },
-  { label: 'Instagram', href: SOCIAL.instagram },
-  { label: 'WhatsApp',  href: SOCIAL.whatsapp  },
+  { label: 'GitHub', href: SOCIAL.github, icon: githubIcon },
+  { label: 'LinkedIn', href: SOCIAL.linkedin, icon: linkedinIcon },
+  { label: 'Instagram', href: SOCIAL.instagram, fallback: 'IG' },
+  { label: 'WhatsApp', href: SOCIAL.whatsapp, icon: whatsappIcon },
 ]
 
 const navLinks = [
@@ -85,9 +88,19 @@ export default function Footer() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-[#7B9CC7] hover:text-[#9DFF2C] transition-colors duration-200 font-body group w-fit"
+                  className="inline-flex items-center gap-3 text-sm text-[#7B9CC7] hover:text-[#9DFF2C] transition-colors duration-200 font-body group w-fit"
                 >
-                  <span className="w-4 h-px bg-[#3D5878] group-hover:bg-[#9DFF2C] transition-colors duration-200" />
+                  {link.icon ? (
+                    <img
+                      src={link.icon}
+                      alt={`${link.label} icon`}
+                      className="w-5 h-5 rounded-[6px] object-cover shrink-0"
+                    />
+                  ) : (
+                    <span className="w-5 h-5 rounded-[6px] border border-[#1B2C45] bg-[#0F1929] text-[10px] text-[#7B9CC7] group-hover:text-[#9DFF2C] inline-flex items-center justify-center font-semibold shrink-0 transition-colors duration-200">
+                      {link.fallback}
+                    </span>
+                  )}
                   {link.label}
                 </a>
               ))}

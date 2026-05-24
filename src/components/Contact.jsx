@@ -1,32 +1,36 @@
 import { useEffect, useRef, useState } from 'react'
+import githubIcon from '../assets/social/github.svg'
+import gmailIcon from '../assets/social/gmail.svg'
+import linkedinIcon from '../assets/social/linkedin.svg'
+import whatsappIcon from '../assets/social/whatsapp.png'
 
 // ── Constantes de contato ─────────────────────────────────────────────────────
 const WHATSAPP_NUMBER = "98985343385"
 
 const contactLinks = [
   {
-    icon: '✉',
+    icon: gmailIcon,
     label: 'E-mail',
     value: 'andre@paytech.app.br',
     detail: 'Respondido em até 24h',
     href: 'mailto:andre@paytech.app.br',
   },
   {
-    icon: 'in',
+    icon: linkedinIcon,
     label: 'LinkedIn',
     value: 'linkedin.com/in/andré-oliver',
     detail: 'Conexão profissional',
     href: 'https://www.linkedin.com/in/andr%C3%A9-oliver-1bb173187',
   },
   {
-    icon: '</>',
+    icon: githubIcon,
     label: 'GitHub',
     value: 'github.com/Andreoliver998',
     detail: 'Projetos e repositórios',
     href: 'https://github.com/Andreoliver998',
   },
   {
-    icon: '💬',
+    icon: whatsappIcon,
     label: 'WhatsApp',
     value: '+55 (98) 9 XXXX-XXXX',
     detail: 'Contato direto e rápido',
@@ -138,8 +142,12 @@ Origem: Portfólio profissional — andre.paytech.app.br`
                 className={`reveal reveal-delay-${idx + 1} flex items-center gap-4 p-5 bg-[#0F1929] border border-[#1B2C45] rounded-xl hover:border-[#9DFF2C]/40 transition-all duration-250 group hover:-translate-y-0.5 hover:shadow-[0_4px_32px_rgba(157,255,44,0.08)]`}
               >
                 {/* Ícone */}
-                <div className="w-12 h-12 rounded-xl bg-[#9DFF2C]/10 border border-[#9DFF2C]/20 flex items-center justify-center font-display font-bold text-[#9DFF2C] text-sm shrink-0 group-hover:bg-[#9DFF2C]/20 transition-colors duration-250">
-                  {link.icon}
+                <div className="w-12 h-12 rounded-xl bg-[#9DFF2C]/10 border border-[#9DFF2C]/20 flex items-center justify-center shrink-0 group-hover:bg-[#9DFF2C]/20 transition-colors duration-250 overflow-hidden">
+                  <img
+                    src={link.icon}
+                    alt={`${link.label} icon`}
+                    className="w-6 h-6 object-contain"
+                  />
                 </div>
 
                 <div className="flex-1 min-w-0">

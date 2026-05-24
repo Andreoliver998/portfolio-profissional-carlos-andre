@@ -1,5 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { socialLinks } from '../data/socialLinks.js'
+import copilotIcon from '../assets/social/github-copilot.svg'
+import pythonIcon from '../assets/social/python.svg'
+import reactIcon from '../assets/social/react.png'
 
 // Estatísticas de destaque no Hero
 const stats = [
@@ -10,9 +13,9 @@ const stats = [
 
 // Tags de papel que flutuam no card visual
 const floatingBadges = [
-  { text: '⚡ React + Node.js',   color: 'text-[#00C8FF]', border: 'border-[#0070F3]/40', delay: '0s',    top: '8%',   right: '8%'  },
-  { text: '🐍 Python & Data',     color: 'text-[#7B9CC7]', border: 'border-white/15',     delay: '1.2s',  bottom: '20%', right: '4%'  },
-  { text: '🤖 AI Integration',    color: 'text-[#7B9CC7]', border: 'border-white/15',     delay: '0.6s',  top: '28%',  left: '4%'   },
+  { text: 'React + Node.js', icon: reactIcon, color: 'text-[#00C8FF]', border: 'border-[#0070F3]/40', delay: '0s', top: '8%', right: '8%' },
+  { text: 'Python & Data', icon: pythonIcon, color: 'text-[#7B9CC7]', border: 'border-white/15', delay: '1.2s', bottom: '20%', right: '4%' },
+  { text: 'AI Integration', icon: copilotIcon, color: 'text-[#7B9CC7]', border: 'border-white/15', delay: '0.6s', top: '28%', left: '4%' },
   { text: '📊 Dashboards',        color: 'text-[#F5A623]', border: 'border-[#F5A623]/30', delay: '1.8s',  bottom: '8%', left: '8%'  },
 ]
 
@@ -220,7 +223,16 @@ function HeroCard() {
             right: badge.right,
           }}
         >
-          {badge.text}
+          <span className="inline-flex items-center gap-2">
+            {badge.icon ? (
+              <img
+                src={badge.icon}
+                alt={`${badge.text} icon`}
+                className="w-4 h-4 object-contain shrink-0"
+              />
+            ) : null}
+            {badge.text}
+          </span>
         </div>
       ))}
 

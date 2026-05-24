@@ -2,6 +2,7 @@
 // Para alterar qualquer link, edite apenas: src/data/socialLinks.js
 import { socialLinks as SOCIAL } from '../data/socialLinks.js'
 import githubIcon from '../assets/social/github.svg'
+import instagramIcon from '../assets/social/instagram.svg'
 import linkedinIcon from '../assets/social/linkedin.svg'
 import whatsappIcon from '../assets/social/whatsapp.png'
 
@@ -9,7 +10,7 @@ import whatsappIcon from '../assets/social/whatsapp.png'
 const socialLinksArr = [
   { label: 'GitHub', href: SOCIAL.github, icon: githubIcon },
   { label: 'LinkedIn', href: SOCIAL.linkedin, icon: linkedinIcon },
-  { label: 'Instagram', href: SOCIAL.instagram, fallback: 'IG' },
+  { label: 'Instagram', href: SOCIAL.instagram, icon: instagramIcon },
   { label: 'WhatsApp', href: SOCIAL.whatsapp, icon: whatsappIcon },
 ]
 

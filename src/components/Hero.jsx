@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { socialLinks } from '../data/socialLinks.js'
 import heroTechBg from '../assets/hero/hero-tech-bg.png'
-import andreProfileImage from '../assets/hero/andre-profile.png'
+import andreProfileImage from '../assets/hero/andre-profile.jpg'
 import copilotIcon from '../assets/social/github-copilot.svg'
 import pythonIcon from '../assets/social/python.svg'
 import reactIcon from '../assets/social/react.svg'

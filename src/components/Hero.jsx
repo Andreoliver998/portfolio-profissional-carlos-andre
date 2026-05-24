@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { socialLinks } from '../data/socialLinks.js'
+import heroTechBg from '../assets/hero/hero-tech-bg.png'
 import copilotIcon from '../assets/social/github-copilot.svg'
 import pythonIcon from '../assets/social/python.svg'
 import reactIcon from '../assets/social/react.svg'
@@ -47,7 +48,14 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden grid-bg">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-[#060A12]">
+
+      <div
+        className="absolute inset-0 hero-image-bg pointer-events-none"
+        style={{ backgroundImage: `url(${heroTechBg})` }}
+      />
+
+      <div className="absolute inset-0 hero-image-overlay pointer-events-none" />
 
       {/* ── Orbes de fundo ─────────────────────────────── */}
       <div className="absolute inset-0 pointer-events-none">

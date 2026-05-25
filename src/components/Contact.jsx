@@ -7,6 +7,7 @@ import { socialLinks } from '../data/socialLinks.js'
 
 // ── Constantes de contato ─────────────────────────────────────────────────────
 const WHATSAPP_NUMBER = "98985343385"
+const LOCATION_URL = 'https://maps.app.goo.gl/HagbbUcHJ3UhZ5DJ6'
 
 const contactLinks = [
   {
@@ -170,7 +171,12 @@ Origem: Portfólio profissional`
             ))}
 
             {/* Card de localização */}
-            <div className="reveal reveal-delay-5 p-5 bg-[#0F1929] border border-[#1B2C45] rounded-xl">
+            <a
+              href={LOCATION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="reveal reveal-delay-5 block p-5 bg-[#0F1929] border border-[#1B2C45] rounded-xl hover:border-[#9DFF2C]/40 transition-all duration-250 hover:-translate-y-0.5 hover:shadow-[0_4px_32px_rgba(157,255,44,0.08)]"
+            >
               <div className="flex items-center gap-3">
                 <span className="text-xl">📍</span>
                 <div>
@@ -182,7 +188,7 @@ Origem: Portfólio profissional`
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           {/* ── Formulário WhatsApp ───────────────────────────────────────── */}

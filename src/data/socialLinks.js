@@ -6,7 +6,7 @@ export const WHATSAPP_NUMBER = "98985343385"
 
 export const socialLinks = {
   github:    "https://github.com/Andreoliver998",
-  linkedin:  "https://www.linkedin.com/in/andr%C3%A9-oliver-1bb173187",
+  linkedin:  "https://www.linkedin.com/in/andreoliveira-ful-dev",
   instagram: "https://www.instagram.com/developer998_oliver/",
   whatsapp:  `https://wa.me/98985343385`,
 }

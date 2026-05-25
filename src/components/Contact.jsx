@@ -3,6 +3,7 @@ import githubIcon from '../assets/social/github.svg'
 import gmailIcon from '../assets/social/gmail.svg'
 import linkedinIcon from '../assets/social/linkedin.svg'
 import whatsappIcon from '../assets/social/whatsapp.png'
+import { socialLinks } from '../data/socialLinks.js'
 
 // ── Constantes de contato ─────────────────────────────────────────────────────
 const WHATSAPP_NUMBER = "98985343385"
@@ -18,9 +19,9 @@ const contactLinks = [
   {
     icon: linkedinIcon,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/andré-oliver',
+    value: 'linkedin.com/in/andreoliveira-ful-dev',
     detail: 'Conexão profissional',
-    href: 'https://www.linkedin.com/in/andr%C3%A9-oliver-1bb173187',
+    href: socialLinks.linkedin,
   },
   {
     icon: githubIcon,

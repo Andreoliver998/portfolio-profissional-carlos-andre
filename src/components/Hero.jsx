@@ -15,10 +15,10 @@ const stats = [
 
 // Tags de papel que flutuam no card visual
 const floatingBadges = [
-  { text: 'React + Node.js', icon: reactIcon, color: 'text-[#00C8FF]', border: 'border-[#0070F3]/40', delay: '0s', top: '8%', right: '8%' },
-  { text: 'Python & Data', icon: pythonIcon, color: 'text-[#7B9CC7]', border: 'border-white/15', delay: '1.2s', bottom: '20%', right: '4%' },
-  { text: 'AI Integration', icon: copilotIcon, color: 'text-[#7B9CC7]', border: 'border-white/15', delay: '0.6s', top: '28%', left: '4%' },
-  { text: '📊 Dashboards',        color: 'text-[#F5A623]', border: 'border-[#F5A623]/30', delay: '1.8s',  bottom: '8%', left: '8%'  },
+  { text: 'React + Node.js', icon: reactIcon, color: 'text-[#00C8FF]', border: 'border-[#0070F3]/40', delay: '0s', top: '8%', right: '5%' },
+  { text: 'AI Integration', icon: copilotIcon, color: 'text-[#7B9CC7]', border: 'border-white/15', delay: '0.6s', top: '30%', left: '-10%' },
+  { text: 'Python & Data', icon: pythonIcon, color: 'text-[#7B9CC7]', border: 'border-white/15', delay: '1.2s', bottom: '16%', right: '-5%' },
+  { text: '📊 Dashboards', color: 'text-[#F5A623]', border: 'border-[#F5A623]/30', delay: '1.8s', bottom: '6%', left: '8%' },
 ]
 
 // Tecnologias exibidas no card visual do Hero
@@ -181,7 +181,7 @@ function HeroCard() {
     <div className="relative w-[460px] h-[500px]">
 
       {/* Card central */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-[260px]">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-[260px]">
         <div className="p-6 bg-[#0F1929]/90 backdrop-blur-xl border border-[#0070F3]/30 rounded-2xl shadow-[0_0_60px_rgba(0,112,243,0.2)]">
 
           {/* Avatar + nome */}
@@ -228,7 +228,7 @@ function HeroCard() {
       {floatingBadges.map((badge, i) => (
         <div
           key={i}
-          className={`absolute px-3.5 py-2 bg-[#0F1929]/90 border ${badge.border} rounded-full text-xs ${badge.color} font-medium font-body backdrop-blur-sm z-20`}
+          className={`absolute px-3.5 py-2 bg-[#0F1929]/90 border ${badge.border} rounded-full text-xs ${badge.color} font-medium font-body backdrop-blur-sm z-30`}
           style={{
             animation: `floatY ${5 + i * 0.8}s ease-in-out infinite`,
             animationDelay: badge.delay,

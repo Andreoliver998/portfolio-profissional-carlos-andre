@@ -6,6 +6,8 @@ import instagramIcon from '../assets/social/instagram.svg'
 import linkedinIcon from '../assets/social/linkedin.svg'
 import whatsappIcon from '../assets/social/whatsapp.png'
 
+const LOCATION_URL = 'https://maps.app.goo.gl/HagbbUcHJ3UhZ5DJ6'
+
 // Array para o .map() do footer — alimentado pela fonte centralizada
 const socialLinksArr = [
   { label: 'GitHub', href: SOCIAL.github, icon: githubIcon },
@@ -57,6 +59,16 @@ export default function Footer() {
                 Disponível para projetos em {year}
               </span>
             </div>
+
+            <a
+              href={LOCATION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-3 text-xs text-[#7B9CC7] hover:text-[#9DFF2C] transition-colors duration-200 font-body w-fit"
+            >
+              <span className="text-sm leading-none">📍</span>
+              Paulino Neves — Maranhão, Brasil
+            </a>
           </div>
 
           {/* ── Navegação rápida ─────────────────────── */}
